@@ -1,0 +1,15 @@
+{
+  "gateway": {
+    "allowFrom": ["telegram"],
+    "mentions": ["@SupportTriage"],
+    "model": "openai/gpt-5.2-codex"
+  },
+  "agents": [
+    {
+      "id": "support-triage",
+      "name": "Customer Support Triage Agent",
+      "description": "Classifies, prioritizes, drafts replies, escalates urgent cases",
+      "promptFile": "./workspace-customer-support-triage-agent/prompts/support-triage.md"
+    }
+  ]
+}
