@@ -1,0 +1,15 @@
+{
+  "gateway": {
+    "allowFrom": ["telegram"],
+    "mentions": ["@InboxTriage"],
+    "model": "openai/gpt-5.2-codex"
+  },
+  "agents": [
+    {
+      "id": "inbox-triage-agent",
+      "name": "Inbox Triage Agent",
+      "description": "Classifies inbound messages, drafts replies, and escalates urgent cases",
+      "promptFile": "./workspace-inbox-triage-agent/prompts/inbox-triage.md"
+    }
+  ]
+}
